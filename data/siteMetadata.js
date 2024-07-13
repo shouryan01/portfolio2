@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: "Shouryan Nikam's Site",
   author: 'Shouryan Nikam',
-  headerTitle: 'SN',
+  headerTitle: 'Shouryan Nikam',
   description: 'A blog created with Next.js and Tailwind.css',
   language: 'en-us',
   theme: 'system', // system, dark or light
