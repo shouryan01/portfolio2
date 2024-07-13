@@ -8,8 +8,7 @@
     "build": "cross-env INIT_CWD=$PWD next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
-    "prepare": "husky"
+    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts"
   },
   "dependencies": {
     "@headlessui/react": "2.1.2",
@@ -50,7 +49,6 @@
     "@types/mdx": "^2.0.13",
     "@types/react": "^18.3.3",
     "cross-env": "^7.0.3",
-    "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "typescript": "^5.5.3"
   },
