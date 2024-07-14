@@ -14,7 +14,7 @@ const projectsData: Project[] = [
   {
     title: 'Google Tasks Desktop',
     description: `Google Tasks doesn't offer a native desktop app, so I made one!`,
-    imgSrc: '/static/images/google-tasks.jpg',
+    imgSrc: '/static/images/projects/google-tasks.jpg',
     href: '/blog/project/google-tasks-desktop',
     github: 'https://github.com/shouryan01/Google-Tasks-Desktop',
     tech1: 'Tauri',
@@ -25,7 +25,7 @@ const projectsData: Project[] = [
   {
     title: 'Blazor Starter Template',
     description: `Microsoft's implementation of a intro to blazor isn't very good. So I made my own!`,
-    imgSrc: '/static/images/blazor.png',
+    imgSrc: '/static/images/projects/blazor.png',
     href: '/blog/project/blazor-template',
     github: 'https://github.com/shouryan01/BlazorServerTemplate',
     tech1: 'C#',
@@ -36,7 +36,7 @@ const projectsData: Project[] = [
   {
     title: 'OpenCV Rock-Paper-Scissors',
     description: "When you really love playing rock-paper-scissors, why not make a game that can run directly in the browser!",
-    imgSrc: '/static/images/paper-rock-scissors.jpg',
+    imgSrc: '/static/images/projects/paper-rock-scissors.jpg',
     href: '/blog/project/opencv-rock-paper-scissors',
     github: 'https://github.com/shouryan01/opencv-rock-paper-scissors',
     tech1: 'Python',
