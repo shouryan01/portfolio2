@@ -21,6 +21,7 @@ export default function Books() {
 								title={d.title}
 								description={d.description}
 								imgSrc={d.imgSrc}
+								github={d.github}
 								href={d.href}
 								tech1={d.tech1}
 								tech2={d.tech2}
