@@ -1,6 +1,5 @@
 import { genPageMetadata } from "app/seo";
-import { quotes } from "@/data/quotesData.tsx";
-import siteMetadata from "@/data/siteMetadata";
+import { quotes } from "@/data/quotesData";
 
 export const metadata = genPageMetadata({
 	title: "Quotes",
