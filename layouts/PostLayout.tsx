@@ -41,7 +41,7 @@ export default function PostLayout({
 }: LayoutProps) {
 	const { filePath, path, slug, date, title, tags } = content;
 	const basePath = path.split("/")[0];
-	const [ids, setIds] = useState([]);
+	const [ids, setIds] = useState<{ id: string; title: string }[]>([]);
 
 	useEffect(() => {
 		const titles = document.querySelectorAll("h2");
