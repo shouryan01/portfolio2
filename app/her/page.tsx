@@ -61,8 +61,8 @@ const PreetikaCountdown = () => {
 					),
 				)}
 			</div>
-			On this day I vow to meet Preetika wherever she is in the world and get
-			her back in my life forever ❤️
+			On this day I vow to meet her wherever she is in the world and get her
+			back in my life forever ❤️
 		</div>
 	);
 };
