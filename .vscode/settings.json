@@ -1,0 +1,27 @@
+{
+  "files.autoSave": "afterDelay",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.tabSize": 2,
+  "search.exclude": {
+    "package-lock.json": true
+  },
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+  },
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname} page",
+    "**/app/**/index.tsx": "${dirname} index",
+    "**/app/**/layout.tsx": "${dirname} layout",
+    "**/app/**/template.tsx": "${dirname} template",
+  }
+}
