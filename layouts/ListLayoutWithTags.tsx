@@ -1,15 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 "use client";
 
-import type { Blog } from "contentlayer/generated";
-import { CoreContent } from "pliny/utils/contentlayer";
 import Link from "@/components/Link";
 import Tag from "@/components/Tag";
-import { formatDate } from "pliny/utils/formatDate";
 import siteMetadata from "@/data/siteMetadata";
-import { slug } from "github-slugger";
 import tagData from "app/tag-data.json";
+import type { Blog } from "contentlayer/generated";
+import { slug } from "github-slugger";
 import { usePathname } from "next/navigation";
+import type { CoreContent } from "pliny/utils/contentlayer";
+import { formatDate } from "pliny/utils/formatDate";
 
 interface PaginationProps {
 	totalPages: number;
@@ -29,11 +29,11 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 	const nextPage = currentPage + 1 <= totalPages;
 
 	return (
-		<div className="space-y-2 pb-8 pt-6 md:space-y-5">
+		<div className="space-y-2 pb-8 pt-6 md:space-y-5 mt-8">
 			<nav className="flex justify-between">
 				{!prevPage && (
 					<button
-						className="cursor-auto disabled:opacity-50"
+						className="cursor-not-allowed disabled:opacity-50"
 						disabled={!prevPage}
 					>
 						Previous
@@ -47,23 +47,28 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
 								: `/${basePath}/page/${currentPage - 1}`
 						}
 						rel="prev"
+						className="hover:underline hover:text-primary-500"
 					>
 						Previous
 					</Link>
 				)}
 				<span>
-					{currentPage} of {totalPages}
+					{currentPage}/{totalPages}
 				</span>
 				{!nextPage && (
 					<button
-						className="cursor-auto disabled:opacity-50"
+						className="cursor-not-allowed disabled:opacity-50"
 						disabled={!nextPage}
 					>
 						Next
 					</button>
 				)}
 				{nextPage && (
-					<Link href={`/${basePath}/page/${currentPage + 1}`} rel="next">
+					<Link
+						href={`/${basePath}/page/${currentPage + 1}`}
+						rel="next"
+						className="hover:underline hover:text-primary-500"
+					>
 						Next
 					</Link>
 				)}
@@ -157,7 +162,7 @@ export default function ListLayoutWithTags({
 															{title}
 														</Link>
 													</h2>
-													<div className="flex flex-wrap">
+													<div className="flex flex-wrap mt-1">
 														{tags?.map((tag) => (
 															<Tag key={tag} text={tag} />
 														))}

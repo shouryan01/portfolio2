@@ -2,16 +2,16 @@
 
 import type { Authors, Blog } from "contentlayer/generated";
 
-// import Comments from "@/components/Comments";
-import type { CoreContent } from "pliny/utils/contentlayer";
 import Image from "@/components/Image";
 import Link from "@/components/Link";
 import PageTitle from "@/components/PageTitle";
-import { useEffect, useState, type ReactNode } from "react";
-import ScrollTopAndComment from "@/components/ScrollTopAndComment";
+// import ScrollTopAndComment from "@/components/ScrollTopAndComment";
 import SectionContainer from "@/components/SectionContainer";
 import Tag from "@/components/Tag";
 import siteMetadata from "@/data/siteMetadata";
+// import Comments from "@/components/Comments";
+import type { CoreContent } from "pliny/utils/contentlayer";
+import { type ReactNode, useEffect, useState } from "react";
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`;
 const discussUrl = (path) =>
@@ -53,7 +53,7 @@ export default function PostLayout({
 
 	return (
 		<SectionContainer>
-			<ScrollTopAndComment />
+			{/* <ScrollTopAndComment /> */}
 			<article>
 				<div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
 					<header className="pt-6 xl:pb-6">
@@ -123,7 +123,7 @@ export default function PostLayout({
 							<div className="prose max-w-none pb-8 pt-10 dark:prose-invert">
 								{children}
 							</div>
-							<div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
+							{/* <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
 								<Link href={discussUrl(path)} rel="nofollow">
 									Discuss on Twitter
 								</Link>
@@ -131,7 +131,7 @@ export default function PostLayout({
 								<Link id="comment" href={editUrl(filePath)}>
 									View on GitHub
 								</Link>
-							</div>
+							</div> */}
 							{/* {siteMetadata.comments && (
 								<div
 									className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300"
