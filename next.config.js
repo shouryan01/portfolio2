@@ -89,11 +89,11 @@ module.exports = () => {
 			return [
 				{
 					source: "/blogtest",
-					destination: "https://www.shouryannikam.com/blogtest",
+					destination: "https://starter-dylprztcv-shouryan01s-projects.vercel.app/blogtest",
 				},
 				{
 					source: "/blogtest/:path*",
-					destination: "https://www.shouryannikam.com/blogtest/:path*",
+					destination: "https://starter-dylprztcv-shouryan01s-projects.vercel.app/blogtest/:path*",
 				},
 			];
 		},
