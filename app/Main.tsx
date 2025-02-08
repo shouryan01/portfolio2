@@ -23,7 +23,11 @@ export default function Home({ posts }) {
 					<p>Check out...</p>
 					<p className="ml-20">
 						the{" "}
-						<Link href="/books" className="text-primary-500 hover:underline">
+						<Link
+							target="_blank"
+							href="https://app.thestorygraph.com/profile/shouryannikam"
+							className="text-primary-500 hover:underline"
+						>
 							books
 						</Link>{" "}
 						I'm reading...
