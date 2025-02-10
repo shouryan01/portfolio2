@@ -1,9 +1,9 @@
-import headerNavLinks from "@/data/headerNavLinks";
-import siteMetadata from "@/data/siteMetadata";
 import Image from "next/image";
 import Link from "./Link";
 import MobileNav from "./MobileNav";
 import ThemeSwitch from "./ThemeSwitch";
+import headerNavLinks from "@/data/headerNavLinks";
+import siteMetadata from "@/data/siteMetadata";
 
 const Header = () => {
 	return (
@@ -37,7 +37,7 @@ const Header = () => {
 							<Link
 								key={link.title}
 								href={link.href}
-								className="rounded-xl p-1 sm:p-4 hover:bg-gray-200 dark:hover:bg-gray-800 font-medium text-gray-900 dark:text-gray-100"
+								className="rounded-xl p-1 sm:p-3 hover:bg-gray-200 dark:hover:bg-gray-800 font-medium text-gray-900 dark:text-gray-100"
 							>
 								{link.title}
 							</Link>
