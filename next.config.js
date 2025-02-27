@@ -88,12 +88,12 @@ module.exports = () => {
 		async rewrites() {
 			return [
 				{
-					source: "/thoughts",
-					destination: "https://shouryanblog.vercel.app/blogtest",
+					source: "/blog",
+					destination: "https://shouryanblog.vercel.app/blog",
 				},
 				{
-					source: "/thoughts/:path*",
-					destination: "https://shouryanblog.vercel.app/blogtest/:path*",
+					source: "/blog/:path*",
+					destination: "https://shouryanblog.vercel.app/blog/:path*",
 				},
 				{
 					source: "/photos",
